@@ -46,6 +46,12 @@ def temperature_converter():
         if ftoc == ("no"):
             print(
                 "Wait, why are you even here then?")
+def letters(string):
+    letter=input("What letter do you want? ")
+    if letter in string:
+        print("TRUE")
+    else:
+        print("FALSE")
 r=1
 while r==1:
     mode=input("What mode do you want? ")
@@ -59,5 +65,7 @@ while r==1:
         tip_calculator()
     if mode==("temperature converter"):
         temperature_converter()
+    if mode==("string"):
+        letters(string=input("What sentence are you looking for? "))
     if mode == ("leave"):
         exit(code="thanks for coming")
